@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+</head>
+<style>
+    td{text-align: center; height: 30px;}
+    .code{width:40px }
+    .username{width: 80px}
+    .address{width: 150px}
+    .link{width: 100px}
+</style>
+<body>
+    <h3>欢迎来到！</h3>
+    <a href="/user/add">添加新用户</a>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td class="code">编号</td>
+                <td class="username">姓名</td>
+                <td class="address">地址</td>
+                <td class="link">详情</td>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td class="code">1</td>
+                <td class="username">姚彬</td>
+                <td class="address">益乐新村</td>
+                <td class="link"><a href="/user/1">查看详情</a></td>
+            </tr>
+            <tr>
+                <td class="code">2</td>
+                <td class="username">admin</td>
+                <td class="address">益乐新村</td>
+                <td class="link"><a href="/user/2">查看详情</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
