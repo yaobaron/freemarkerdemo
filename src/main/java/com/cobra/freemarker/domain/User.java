@@ -1,4 +1,4 @@
-package com.cobra.freemarker.vo;
+package com.cobra.freemarker.domain;
 
 /**
  * @Author: Baron

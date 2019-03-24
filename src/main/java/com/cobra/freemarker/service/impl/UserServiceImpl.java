@@ -1,7 +1,7 @@
 package com.cobra.freemarker.service.impl;
 
 import com.cobra.freemarker.service.UserService;
-import com.cobra.freemarker.vo.User;
+import com.cobra.freemarker.domain.User;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

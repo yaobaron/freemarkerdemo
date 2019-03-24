@@ -2,7 +2,7 @@ package com.cobra.freemarker.controller;
 
 import com.cobra.freemarker.service.StaticService;
 import com.cobra.freemarker.service.UserService;
-import com.cobra.freemarker.vo.User;
+import com.cobra.freemarker.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.cobra.freemarker.service;
 
-import com.cobra.freemarker.vo.User;
+import com.cobra.freemarker.domain.User;
 
 import java.util.Collection;
 
