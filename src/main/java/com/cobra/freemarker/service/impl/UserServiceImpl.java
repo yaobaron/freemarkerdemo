@@ -1,7 +1,7 @@
 package com.cobra.freemarker.service.impl;
 
-import com.cobra.freemarker.service.UserService;
 import com.cobra.freemarker.domain.User;
+import com.cobra.freemarker.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private ConcurrentMap<Integer,User> userMap = new ConcurrentHashMap<>();
+    private ConcurrentMap<Integer, User> userMap = new ConcurrentHashMap<>();
 
     private final static AtomicInteger idGenerator = new AtomicInteger();
 

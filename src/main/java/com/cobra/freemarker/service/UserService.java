@@ -13,6 +13,7 @@ public interface UserService {
 
     /**
      * 根据userId查找User
+     *
      * @param userId
      * @return
      */
@@ -20,12 +21,14 @@ public interface UserService {
 
     /**
      * 添加新用户
+     *
      * @param user
      */
     void add(User user);
 
     /**
      * 查询所有用户
+     *
      * @return
      */
     Collection<User> findAllUsers();

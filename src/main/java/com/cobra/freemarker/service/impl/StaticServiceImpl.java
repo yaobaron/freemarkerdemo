@@ -34,7 +34,7 @@ public class StaticServiceImpl implements StaticService {
     public void createIndexHtml() {
         try {
             /**获取输出目标文件输出流------开始*/
-            String filepath = this.getClass().getResource("/").toURI().getPath()+"static/";
+            String filepath = this.getClass().getResource("/").toURI().getPath() + "static/";
             File folder = new File(filepath);
             //如果文件夹不存在
             if (!folder.exists()) {
@@ -46,7 +46,7 @@ public class StaticServiceImpl implements StaticService {
             if (!indexHtml.exists()) {
                 indexHtml.createNewFile();
             }
-            Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(indexHtml),"UTF-8"));
+            Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(indexHtml), "UTF-8"));
             /**获取输出目标文件输出流------结束*/
 
             //获取数据
@@ -57,11 +57,11 @@ public class StaticServiceImpl implements StaticService {
             Template template = configuration.getTemplate("list.ftl");
 
             //把数据和输出文件信息交给模板得到静态html文件
-            template.process(map,out);
+            template.process(map, out);
 
             out.flush();
-            out.close();}
-        catch (URISyntaxException e) {
+            out.close();
+        } catch (URISyntaxException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
